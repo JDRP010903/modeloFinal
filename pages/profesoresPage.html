@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profesores - EDECA</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/profesoresPage.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#">EDECA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./inicioPage.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./clasesPage.html">Clases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./profesoresPage.html">Profesores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./comunidadesPage.html">Comunidades</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        DianaPrado
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./usuarioPage.html">Mi Perfil</a></li>
+                        <li><a class="dropdown-item" href="#">Configuraciones</a></li>
+                        <li><a class="dropdown-item" href="../index.html">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container mt-5">
+        <h1 class="text-center p-5">PROFESORES</h1>
+        
+        <div class="row">
+            <!-- Tarjeta del Profesor 1 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="Imagen del Profesor">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre del Profesor</h5>
+                        <p class="card-text">Clases que imparte: Yoga, Pilates</p>
+                        <p class="card-text">Calificación: 4.5/5</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProfesor1">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Modal para el Profesor 1 -->
+            <div class="modal fade" id="modalProfesor1" tabindex="-1" aria-labelledby="modalProfesor1Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProfesor1Label">Comentarios sobre el Profesor</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Comentarios de los usuarios -->
+                            <p>Comentario 1: Excelente profesor, muy atento.</p>
+                            <p>Comentario 2: Las clases son muy dinámicas y divertidas.</p>
+                            <!-- Agrega más comentarios según sea necesario -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profesor 2 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="Imagen del Profesor 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre del Profesor 2</h5>
+                        <p class="card-text">Clases que imparte: Baile, Zumba</p>
+                        <p class="card-text">Calificación: 4.7/5</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProfesor2">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal para el Profesor 2 -->
+            <div class="modal fade" id="modalProfesor2" tabindex="-1" aria-labelledby="modalProfesor2Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProfesor2Label">Comentarios sobre el Profesor 2</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Comentario 1: Sus clases de Zumba son increíbles.</p>
+                            <p>Comentario 2: Siempre energético y motivador.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Profesor 3 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="Imagen del Profesor 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre del Profesor 3</h5>
+                        <p class="card-text">Clases que imparte: Pilates, Yoga</p>
+                        <p class="card-text">Calificación: 4.8/5</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProfesor3">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal para el Profesor 3 -->
+            <div class="modal fade" id="modalProfesor3" tabindex="-1" aria-labelledby="modalProfesor3Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProfesor3Label">Comentarios sobre el Profesor 3</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Comentario 1: Profesor muy atento, excelente en Pilates.</p>
+                            <p>Comentario 2: Sus clases de yoga son muy relajantes.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profesor 4 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="Imagen del Profesor 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre del Profesor 4</h5>
+                        <p class="card-text">Clases que imparte: Baile, Zumba</p>
+                        <p class="card-text">Calificación: 4.9/5</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProfesor4">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal para el Profesor 4 -->
+            <div class="modal fade" id="modalProfesor4" tabindex="-1" aria-labelledby="modalProfesor4Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProfesor4Label">Comentarios sobre el Profesor 4</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Comentario 1: Las clases de baile son muy energéticas y divertidas.</p>
+                            <p>Comentario 2: Gran instructor de Zumba, muy motivador.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profesor 5 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="Imagen del Profesor 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre del Profesor 5</h5>
+                        <p class="card-text">Clases que imparte: Yoga Aéreo, Pilates Reformer</p>
+                        <p class="card-text">Calificación: 4.6/5</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProfesor5">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal para el Profesor 5 -->
+            <div class="modal fade" id="modalProfesor5" tabindex="-1" aria-labelledby="modalProfesor5Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProfesor5Label">Comentarios sobre el Profesor 5</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Comentario 1: El yoga aéreo con él es una experiencia única.</p>
+                            <p>Comentario 2: Muy profesional en Pilates Reformer, recomendado.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profesor 6 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="Imagen del Profesor 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre del Profesor 6</h5>
+                        <p class="card-text">Clases que imparte: Meditación, Yoga Restaurativo</p>
+                        <p class="card-text">Calificación: 4.7/5</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProfesor6">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal para el Profesor 6 -->
+            <div class="modal fade" id="modalProfesor6" tabindex="-1" aria-labelledby="modalProfesor6Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProfesor6Label">Comentarios sobre el Profesor 6</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Comentario 1: Sus sesiones de meditación son profundamente relajantes.</p>
+                            <p>Comentario 2: Excelente guía en yoga restaurativo, muy pacífico.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

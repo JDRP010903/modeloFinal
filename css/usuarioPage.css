@@ -1,0 +1,22 @@
+:root {
+    --azul-intenso: #007BFF;
+    --naranja-vibrante: #FF5722;
+    --gris-carbon: #303030;
+    --blanco: #FFFFFF;
+    --verde-lima: #CDDC39;
+    --plata-suave: #B0BEC5;
+}
+
+body {
+    background-color: var(--plata-suave);
+    color: var(--gris-carbon);
+    height: 100vh;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases - EDECA</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/clasesPage.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#">EDECA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./inicioPage.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./clasesPage.html">Clases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./profesoresPage.html">Profesores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./comunidadesPage.html">Comunidades</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        DianaPrado
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./usuarioPage.html">Mi Perfil</a></li>
+                        <li><a class="dropdown-item" href="#">Configuraciones</a></li>
+                        <li><a class="dropdown-item" href="../index.html">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container mt-5">
+        <h1 class="p-5">CLASES</h1>
+        <div class="row-col">
+            <h3>Clases de Yoga</h3>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 - Yoga -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <!-- Card 1 -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://t4.ftcdn.net/jpg/00/43/39/79/360_F_43397950_r4W5MeDJT9O7RrWKu56Z7IBouX9HWotD.jpg" class="card-img-top" alt="Yoga">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Yoga Matutino</h5>
+                                        <p class="card-text">Empieza tu día con energía y enfoque con nuestra clase de Yoga matutino. Horario: 7:00 AM.</p>
+                                        <p>Profesor: Carlos Medina</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://t3.ftcdn.net/jpg/04/71/05/02/360_F_471050286_7vunZPOxd5hbJgjwDnEqO1sUhMO1yKcT.jpg" class="card-img-top" alt="Yoga">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Yoga Vinyasa</h5>
+                                        <p class="card-text">Fluye con movimientos suaves y respiraciones profundas. Horario: 5:00 PM.</p>
+                                        <p>Profesora: Ana Torres</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Yoga">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Yoga Restaurativo</h5>
+                                        <p class="card-text">Relaja cuerpo y mente con técnicas de estiramiento y meditación. Horario: 8:00 PM.</p>
+                                        <p>Profesora: Sofía Gómez</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 - Yoga, sesiones alternativas -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <!-- Card 1 -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="data:image/png;base64,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" class="card-img-top" alt="Yoga">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Yoga al Atardecer</h5>
+                                        <p class="card-text">Disfruta de una sesión de yoga mientras el sol se pone. Horario: 6:00 PM.</p>
+                                        <p>Profesor: Javier Sánchez</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3n46e4UcIKlIqE93fRyQC2YQtIFBR6ttuBg&usqp=CAU" class="card-img-top" alt="Yoga">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Yoga de Energía</h5>
+                                        <p class="card-text">Aumenta tu energía con esta dinámica clase de yoga. Horario: 10:00 AM.</p>
+                                        <p>Profesor: Alejandro Fernández</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpglbUU6x54I2hqdvyH9Qm29LgnKe2ZY7buA&usqp=CAU" class="card-img-top" alt="Yoga">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Yoga para la Mente</h5>
+                                        <p class="card-text">Centra tu mente y cuerpo con técnicas de respiración y meditación. Horario: 2:00 PM.</p>
+                                        <p>Profesora: Patricia Ruiz</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 - Yoga, sesiones de la mañana -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <!-- Card 1 -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROlD-VI83Lx2vro_3TipTZ5SopG3JPAQUBmA&usqp=CAU" class="card-img-top" alt="Yoga">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Yoga Amanecer</h5>
+                                        <p class="card-text">Saluda al nuevo día con una sesión revitalizante de yoga. Horario: 5:00 AM.</p>
+                                        <p>Profesora: Claudia Rodríguez</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXgB6vYS-MU0ZWPdjIV2lF9DOPaDdQJgBbxQ&usqp=CAU" class="card-img-top" alt="Yoga">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Yoga Hatha</h5>
+                                        <p class="card-text">Practica posturas clásicas de Hatha Yoga para equilibrio y fortaleza. Horario: 9:00 AM.</p>
+                                        <p>Profesora: Marta Vidal</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjNIbUVITnji9IHnahFlOpBcyKlwBU3EqD8w&usqp=CAU" class="card-img-top" alt="Yoga">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Yoga y Meditación</h5>
+                                        <p class="card-text">Combina yoga suave con meditación para una experiencia de calma total. Horario: 11:00 AM.</p>
+                                        <p>Profesor: Fernando Castro</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <hr>
+        <div class="row-col mt-4">
+            <h3>Clases de Baile</h3>
+            <div id="carouselBaile" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 - Clases de Baile -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <!-- Card 1 - Salsa -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/500x250.png?text=Salsa+para+Principiantes" class="card-img-top" alt="Salsa">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Salsa para Principiantes</h5>
+                                        <p class="card-text">Aprende los pasos básicos de la salsa en un ambiente divertido y acogedor. Horario: 6:00 PM.</p>
+                                        <p>Instructor: David Martínez</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 2 - Bachata -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/500x250.png?text=Bachata+Sensual" class="card-img-top" alt="Bachata">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bachata Sensual</h5>
+                                        <p class="card-text">Sumérgete en el mundo de la bachata sensual, ideal para bailarines intermedios. Horario: 8:00 PM.</p>
+                                        <p>Instructora: Laura Rodríguez</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3 - Hip Hop -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/500x250.png?text=Hip+Hop+para+Todos" class="card-img-top" alt="Hip Hop">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hip Hop para Todos</h5>
+                                        <p class="card-text">Explora los movimientos energéticos del hip hop en esta clase dinámica. Horario: 7:30 PM.</p>
+                                        <p>Instructor: Miguel Ángel Torres</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Slide 2 - Clases de Baile -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <!-- Card 1 - Zumba -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/500x250.png?text=Zumba+Fitness" class="card-img-top" alt="Zumba">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Zumba Fitness</h5>
+                                        <p class="card-text">Combina el fitness con ritmos latinos en esta enérgica clase de Zumba. Horario: 5:00 PM.</p>
+                                        <p>Instructora: Carolina Peña</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 2 - Tango -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/500x250.png?text=Tango+Argentino" class="card-img-top" alt="Tango">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tango Argentino</h5>
+                                        <p class="card-text">Descubre la pasión y elegancia del tango con nuestra clase especializada. Horario: 9:00 PM.</p>
+                                        <p>Instructor: Juan López</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3 - Flamenco -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/500x250.png?text=Flamenco+Básico" class="card-img-top" alt="Flamenco">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Flamenco Básico</h5>
+                                        <p class="card-text">Aprende los fundamentos del flamenco en esta clase introductoria. Horario: 6:30 PM.</p>
+                                        <p>Instructora: Isabel García</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBaile" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselBaile" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <hr>
+        <div class="row-col mt-4">
+            <h3>Clases de Pilates</h3>
+            <div id="carouselPilates" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 - Clases de Pilates -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <!-- Card 1 - Pilates Mat -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/500x250.png?text=Pilates+Mat" class="card-img-top" alt="Pilates Mat">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pilates Mat Básico</h5>
+                                        <p class="card-text">Ideal para principiantes, enfocado en la técnica y postura básica. Horario: 8:00 AM.</p>
+                                        <p>Instructora: María Fernández</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 2 - Pilates Reformer -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/500x250.png?text=Pilates+Reformer" class="card-img-top" alt="Pilates Reformer">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pilates Reformer Intermedio</h5>
+                                        <p class="card-text">Aumenta la intensidad y profundiza tu práctica con el Reformer. Horario: 10:00 AM.</p>
+                                        <p>Instructor: Carlos Ruiz</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3 - Pilates Cadillac -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/500x250.png?text=Pilates+Cadillac" class="card-img-top" alt="Pilates Cadillac">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pilates Cadillac Avanzado</h5>
+                                        <p class="card-text">Para estudiantes avanzados, explorando ejercicios más complejos. Horario: 12:00 PM.</p>
+                                        <p>Instructora: Ana López</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Slide 2 - Clases de Pilates -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <!-- Card 1 - Pilates Barre -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/500x250.png?text=Pilates+Barre" class="card-img-top" alt="Pilates Barre">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pilates Barre Fusion</h5>
+                                        <p class="card-text">Una combinación energética de Pilates y ballet para tonificar y fortalecer. Horario: 4:00 PM.</p>
+                                        <p>Instructor: Jorge Martín</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 2 - Pilates Aeróbico -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/500x250.png?text=Pilates+Aeróbico" class="card-img-top" alt="Pilates Aeróbico">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pilates Aeróbico Dinámico</h5>
+                                        <p class="card-text">Mezcla el Pilates con ejercicios aeróbicos para mejorar la resistencia. Horario: 6:00 PM.</p>
+                                        <p>Instructora: Sofía González</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3 - Pilates en Silla -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/500x250.png?text=Pilates+en+Silla" class="card-img-top" alt="Pilates en Silla">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pilates en Silla para la Oficina</h5>
+                                        <p class="card-text">Ejercicios diseñados para realizar en la silla, ideal para días de oficina. Horario: 1:00 PM.</p>
+                                        <p>Instructor: Roberto Díaz</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPilates" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPilates" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <hr>
+        <!-- Botón "Ver más clases" centrado, fuera del carrusel -->
+        <div class="text-center mt-4 mb-5">
+            <a href="#urlParaVerMasClases" class="btn btn-primary">Ver más clases</a>
+        </div>
+    </main>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
